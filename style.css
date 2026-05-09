@@ -85,7 +85,8 @@ section {
 }
 
 .hero {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     background: url(./img/background.png);
     background-position: top right;
@@ -93,6 +94,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 120px 16% 60px;
 }
 .main-content h4 {
 
@@ -463,6 +465,9 @@ color: var(--other-color);
     section{
         padding: 90px 8% 80px;
     }
+    .hero {
+        padding: 120px 8% 60px;
+    }
     .footer {
         padding: 18px 8%;
     }
@@ -485,7 +490,8 @@ color: var(--other-color);
         padding: 18px 5%;
     }
     .hero {
-        height: 90vh;
+        min-height: 90vh;
+        padding: 120px 5% 60px;
         background-position: center;
     }
 }
@@ -558,33 +564,40 @@ color: var(--other-color);
 }
 @media (max-width:680px) {
     .hero {
-        height: 100vh;
+        min-height: auto;
         padding: 100px 5% 50px;
         background-position: center;
     }
     .main-content {
         padding-top: 20px;
+        width: 100%;
     }
     .main-content h1 {
-        font-size: 2.5rem;
-        margin: 15px 0;
+        font-size: 2rem;
+        margin: 10px 0;
+        line-height: 1.2;
     }
     .main-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        line-height: 1.2;
     }
     .main-content p {
         width: 100%;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 22px;
         margin-bottom: 20px;
     }
     .main-btn {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
+        margin-top: 20px;
     }
     .btn {
         width: 100%;
         text-align: center;
+        padding: 10px 20px;
+        font-size: 14px;
     }
     .btn2 {
         margin-left: 0;
@@ -594,15 +607,26 @@ color: var(--other-color);
 
 @media (max-width:470px) {
     :root {
-        --h1-font: 2rem;
-        --h2-font: 1.5rem;
-        --p-font: 13px;
+        --h1-font: 1.8rem;
+        --h2-font: 1.3rem;
+        --p-font: 12px;
     }
     section {
-        padding: 60px 4% 40px;
+        padding: 50px 4% 30px;
     }
     .hero {
-        padding: 80px 4% 30px;
+        min-height: auto;
+        padding: 80px 4% 40px;
+    }
+    .main-content h1 {
+        font-size: 1.8rem !important;
+    }
+    .main-content h2 {
+        font-size: 1.3rem !important;
+    }
+    .main-content p {
+        font-size: 12px !important;
+        line-height: 20px !important;
     }
     .about-img img {
         text-align: center;
