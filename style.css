@@ -107,11 +107,11 @@ section {
 .main-content p {
     font-size: var(--p-font);
     font-weight: 400;
-    width: 620px;
-    max-width: 100%;
-    color: var(--other-color);line-height: 30px;
+    width: 100%;
+    max-width: 620px;
+    color: var(--other-color);
+    line-height: 30px;
     margin-bottom: 15px;
-
 }
 .social {
     margin-bottom: 40px;
@@ -557,24 +557,88 @@ color: var(--other-color);
     }
 }
 @media (max-width:680px) {
+    .hero {
+        height: 100vh;
+        padding: 100px 5% 50px;
+        background-position: center;
+    }
+    .main-content {
+        padding-top: 20px;
+    }
+    .main-content h1 {
+        font-size: 2.5rem;
+        margin: 15px 0;
+    }
+    .main-content h2 {
+        font-size: 1.8rem;
+    }
     .main-content p {
-    width: 100%;
-}
+        width: 100%;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .main-btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    .btn2 {
+        margin-left: 0;
+    }
     
 }
 
 @media (max-width:470px) {
-:root {
-    --h1-font:3rem;
-    --h2-font:2rem;
-}
-.about-img img {
-    text-align: center;
-    width: 100%;
-    height: 300px;
-    max-width: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto;
-}
+    :root {
+        --h1-font: 2rem;
+        --h2-font: 1.5rem;
+        --p-font: 13px;
+    }
+    section {
+        padding: 60px 4% 40px;
+    }
+    .hero {
+        padding: 80px 4% 30px;
+    }
+    .about-img img {
+        text-align: center;
+        width: 100%;
+        height: 250px;
+        max-width: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    .about-text h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    .exp-area p {
+        font-size: 14px;
+        line-height: 28px;
+        white-space: normal;
+    }
+    .services-content {
+        grid-template-columns: 1fr;
+    }
+    .box {
+        padding: 30px 20px 25px;
+    }
+    .Portfolio-content {
+        grid-template-columns: 1fr;
+    }
+    .contact-form form {
+        width: 100%;
+    }
+    form .send-btn {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
