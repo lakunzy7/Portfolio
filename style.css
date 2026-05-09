@@ -231,14 +231,18 @@ header.sticky {
     color: var(--text-color);
     font-weight: 600;
     font-size: 19px;
-
     line-height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .exp-area p span {
     color: var(--other-color);
     font-size: var(--p-font);
-    font-weight:400 ;
-    margin-left: 8px ;
+    font-weight: 400;
+    margin-left: 8px;
+    white-space: normal;
+    word-break: break-word;
 }
 .center-text {
     text-align: center;
